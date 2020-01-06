@@ -14,7 +14,7 @@ create table clientes(
     nombre varchar(25) not null,
     apellido varchar(25) not null,
     tipoDocumento text CHECK(tipoDocumento IN ('DNI','LC','LE','PASAPORTE')) not null,
-    -- las check constraint son internas, no se pueden declarar externamente en sqlite
+    -- las check constraint son internas, no se pueden declarar externamente en SQLite
     numeroDocumento char(8),
     direccion varchar(50)
 );
