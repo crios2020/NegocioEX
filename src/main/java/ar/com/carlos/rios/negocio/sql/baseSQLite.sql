@@ -1,9 +1,6 @@
 /*
     url="jdbc:sqlite:/base.db";
-    en el cliente netbeans esta url hace referencia a la carpeta raiz del sistema.
-    pero en el conector java esta url hace referencia a la carpeta raiz del proyecto.
-    correr el script y se genera la base en el raiz del sistema, luego copiar el archivo 
-    generado base.db al raiz del proyecto para que sea autoportable.
+    /base.db hace referencia a una ruta absoluta del sistema no del proyecto
 */
 drop table if exists detalles;
 drop table if exists facturas;
@@ -41,4 +38,3 @@ create table detalles(
     idArticulo int,
     primary key(letra,numero,idArticulo)
 );
-

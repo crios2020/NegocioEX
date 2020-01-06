@@ -1,2 +1,6 @@
 Software de ejemplo con multiples bases de datos
 
+06/01/2020 : Se agrego script para base de datos mysql sqlite y postgre. 
+            No se agrego mongoDB por que se generara automaticamente al insertar datos en la base.
+
+
