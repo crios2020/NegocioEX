@@ -1,6 +1,6 @@
--- drop database if exists negocioWeb;
--- create database negocioWeb;
--- use negocioWeb;
+-- drop database if exists negocioX;
+-- create database negocioX;
+-- use negocioX;
 
 /*
 remotemysql.com
@@ -47,9 +47,9 @@ create table articulos(
     stockMax int unsigned
 );
 create table detalles(
-    letra enum('A','B','C'),
-    numero int unsigned,
-    idArticulo int,
+    letra enum('A','B','C') not null,
+    numero int unsigned not null,
+    idArticulo int not null,
     primary key(letra,numero,idArticulo)
 );
 alter table clientes
